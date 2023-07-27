@@ -26,10 +26,11 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
+        # Set the GitHub Token as a secret or environment variable.
+        # This token is required to push to the repository. It is provided by GitHub Actions by default.
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
         # Set the build directory where your site is generated
         publish_dir: .  # Change this path if your site is generated to a different folder
 
-      # Set the GitHub Token as a secret or environment variable.
-      # This token is required to push to the repository. It is provided by GitHub Actions by default.
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
