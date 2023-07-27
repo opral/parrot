@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Update min version json
 
 on:
   # Trigger the deployment manually when a workflow_dispatch event is manually triggered
