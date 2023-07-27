@@ -1,0 +1,35 @@
+name: Deploy GitHub Pages
+
+on:
+  # Trigger the deployment manually when a workflow_dispatch event is manually triggered
+  workflow_dispatch:
+
+  # Trigger the deployment periodically on a schedule (every day at 00:00 UTC)
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Build your site  # Modify this step to build your GitHub Pages site if needed
+      # For example, if your site is built using Jekyll:
+      # run: jekyll build
+    - name: Fetch Plugin Info
+      run: |
+        # Fetch JSON data and store it as plugininfo.json
+        curl -sSL https://www.figma.com/api/plugins/1205803482754362456/versions > plugininfo.json
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        # Set the build directory where your site is generated
+        publish_dir: .  # Change this path if your site is generated to a different folder
+
+      # Set the GitHub Token as a secret or environment variable.
+      # This token is required to push to the repository. It is provided by GitHub Actions by default.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
