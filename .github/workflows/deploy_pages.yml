@@ -15,7 +15,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Build your site  # Modify this step to build your GitHub Pages site if needed
+    #- name: Build your site  # Modify this step to build your GitHub Pages site if needed
       # For example, if your site is built using Jekyll:
       # run: jekyll build
     - name: Fetch Plugin Info
