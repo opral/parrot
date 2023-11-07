@@ -1,5 +1,5 @@
 {
-	"id": "app.inlang.editor",
+	"id": "app.parrot.figmaPlugin",
 	"icon": "https://inlang.com/favicon/safari-pinned-tab.svg",
 	"gallery": [
 		"https://cdn.jsdelivr.net/gh/inlang/monorepo@latest/inlang/assets/marketplace/editor-marketplace-cover.jpg",
@@ -9,17 +9,17 @@
 		"https://cdn.jsdelivr.net/gh/inlang/monorepo@latest/inlang/assets/marketplace/editor-gallery/editor-gallery-image-4.jpg"
 	],
 	"displayName": {
-		"en": "Web Editor"
+		"en": "Parrot – i18n Figma plugin"
 	},
 	"description": {
-		"en": "The inlang Web Editor enables you to work with globalized codebases in your browser, without having to touch code but still being able to have a git-based workflow."
+		"en": "Parrot simplifies the translation management process right within Figma. If you deal with multilingual design projects and want to streamline your translation workflow, this plugin is for you!"
 	},
 	"readme": {
-		"en": "https://cdn.jsdelivr.net/gh/inlang/monorepo@main/inlang/source-code/editor/README.md"
+		"en": "https://cdn.jsdelivr.net/gh/parrot-global/parrot@main/README.md"
 	},
-	"keywords": ["editor", "web", "application", "website", "translator", "lix"],
+	"keywords": ["editor", "web", "figma", "plugin", "application", "website", "translator", "lix"],
 	"publisherName": "inlang",
 	"publisherIcon": "https://inlang.com/favicon/safari-pinned-tab.svg",
-	"website": "/editor",
+	"website": "https://www.figma.com/community/plugin/1205803482754362456",
 	"license": "Apache-2.0"
 }
