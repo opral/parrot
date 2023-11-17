@@ -1,3 +1,5 @@
+[<img width="256px" height="auto" alt="Figma install badge" src="https://cdn.jsdelivr.net/gh/inlang/monorepo@latest/inlang/assets/marketplace/figma-install-badge.svg" />](https://www.figma.com/community/plugin/1205803482754362456)
+
 # Parrot
 
 Parrot simplifies the translation management process right within Figma. If you deal with multilingual design projects and want to streamline your translation workflow, this plugin is for you!
