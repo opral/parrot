@@ -24,6 +24,7 @@
     "translator",
     "lix"
   ],
+  "pricing": "start free",
   "publisherName": "Parrot.global",
   "publisherIcon": "https://cdn.jsdelivr.net/gh/parrot-global/parrot@main/parrot-logo.svg",
   "license": "PolyForm Strict License 1.0.0"
